@@ -13,6 +13,8 @@ import { ParentComponent } from './output-and-input/parent/parent.component';
 import { ChildComponent } from './output-and-input/child/child.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BooComponent } from './boo/boo.component';
+import { WaldComponent } from './wald/wald.component';
 
 const appRoutes: Routes = [
   { path: '', component: ChallangeComponent },
@@ -32,6 +34,8 @@ const appRoutes: Routes = [
     ParentComponent,
     ChildComponent,
     NotFoundComponent,
+    BooComponent,
+    WaldComponent,
   ],
   imports: [
     BrowserModule,
