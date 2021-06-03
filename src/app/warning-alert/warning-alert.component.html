@@ -1,0 +1,14 @@
+<p>
+    {{'vous'}} avez un message dans le serveur {{serverId}} : 
+    {{message}} et le type d'erreur est : {{typeDalert()}}</p>
+
+    <button [disabled]="allowShow"> show me !</button>
+    <button (click)="allowShow = !allowShow">Abled</button>
+    <button (click)="sameFunction()" >same thing</button>
+
+    <hr>
+
+    <input type="text" [(ngModel)]='serverName'>
+    <p>{{serverName}}</p>
+
+    <hr>

@@ -1,0 +1,20 @@
+<!-- <input type="text" [(ngModel)]="username" (input)="myfunction($event)" >
+<p>{{username}}</p>
+<button  [disabled]="hana">click</button>
+<button (click)="reset()">Reset</button>
+
+
+<button [disabled]="username===''">methode2</button> -->
+
+
+<button (click)="showw()" class="btn btn-primary">Display Details</button>
+<p [ngClass]="{'d-none':chow }">Secret Password=tune</p>
+<!-- <table>
+    <tr [ngClass]="{'show':change }" *ngFor="let book of arr">{{str}}
+    </tr>
+</table> -->
+<p *ngFor="let i of arr" [ngClass]="{'show':change }">{{t}}</p>
+<hr>
+<button (click)="view()" >Display details</button>
+<p *ngIf ="display" >Secret  Password=tune</p>
+<div [ngClass] ="{'show' : i>4}" [ngStyle]="{backgroundColor : color(i) }" *ngFor="let item of items ; let  i=index " [attr.data-index]='i' > {{item}} </div>

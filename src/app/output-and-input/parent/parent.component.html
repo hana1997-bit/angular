@@ -1,0 +1,23 @@
+<!-- <app-child
+ *ngFor="let serveElement of serverElements" [element]="serveElement">
+</app-child> -->
+<app-child (servercreated)="addservers($event)"></app-child>
+<table class="table">
+    <thead>
+        <tr>
+            <th>server Name</th>
+           <th>Server Content</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let serverElement of serverElements">
+         <td>{{serverElement.name}}</td>
+         <td>{{serverElement.content}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<button routerLink="/warnnig"> to challenge</button>
+
+

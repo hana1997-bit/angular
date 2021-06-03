@@ -1,0 +1,12 @@
+<h3>My server name {{element.type}} </h3>
+
+<p>My server type {{element.name}}</p>
+
+<p>My server content {{element.content}}</p>
+
+<label for="name">Server Name</label>
+<input type="text"id='name' [(ngModel)]='newservername'>
+<label for="content">Server Content</label>
+<input type="text" id="content" [(ngModel)]='newservercontent'>
+<button class="btn btn-primary" (click)="addserver()">Addserver</button>
+
